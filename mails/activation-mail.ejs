@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LMS Activation Email</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .email-footer {
+            text-align: center;
+            font-size: 12px;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to LMS</h1>
+
+    <p>Hello <%= user.name %>,</p>
+    <p>Thank you for registering with LMS. Please use the following activation code to activate your account:</p>
+    <h2>
+        <%= activationCode %>
+    </h2>
+    <p>Please enter this code on the activation page within next 5 minutes.</p>
+    <p>If you did not register for LMS, please ignore this email.</p>
+
+    <p class="email-footer">If you have any questions, please contact us at <a>support@lms.com</a></p>
+
+</body>
+
+</html>
